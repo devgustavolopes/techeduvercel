@@ -1,9 +1,544 @@
 {
+  "usuarios": [
+    {
+      "id": "15a5",
+      "login": "admin",
+      "senha": "123",
+      "email": "caique@teste.com",
+      "nome": "Caique de Lima e Silva",
+      "profissao": "Analista de Engenharia",
+      "tipoUsuario": "admin",
+      "dataNascimento": "2004-11-12",
+      "localizacao": "Betim/MG",
+      "biografia": "Admin do sistema e entusiasta de tecnologia.",
+      "interesses": [
+        "Software",
+        "Engenharia",
+        "Gestão"
+      ],
+      "fotoUrl": ""
+    },
+    {
+      "id": "c812",
+      "login": "eve_samirx",
+      "senha": "123",
+      "email": "samira@teste.com",
+      "nome": "Samira Evelyn",
+      "profissao": "Química",
+      "tipoUsuario": "usuario",
+      "dataNascimento": "2004-11-12",
+      "localizacao": "Betim/MG",
+      "biografia": "Estudante dedicada apaixonada por ciência.",
+      "interesses": [
+        "Química",
+        "Data Science"
+      ],
+      "fotoUrl": ""
+    },
+    {
+      "id": "user_03",
+      "login": "matheus_dev",
+      "senha": "123",
+      "email": "matheus@email.com",
+      "nome": "Matheus Aurélio",
+      "profissao": "Estudante ADS",
+      "tipoUsuario": "usuario",
+      "dataNascimento": "2000-05-20",
+      "localizacao": "Belo Horizonte/MG",
+      "biografia": "Focado em Front-end e UX Design.",
+      "interesses": [
+        "React",
+        "CSS"
+      ],
+      "fotoUrl": ""
+    },
+    {
+      "id": "26bd",
+      "nome": "Pedro Ramos",
+      "login": "user",
+      "senha": "123",
+      "email": "pedrohenrique191106@gmail.com",
+      "tipoUsuario": "usuario",
+      "profissao": "Pintor",
+      "localizacao": "Brasil",
+      "biografia": "Oi essa é minha bio!",
+      "interesses": [],
+      "fotoUrl": ""
+    },
+    {
+      "id": "c42a",
+      "nome": "Pedro Henrique",
+      "login": "pedrao",
+      "senha": "MA19112006@",
+      "email": "teste@gmail.com",
+      "tipoUsuario": "usuario",
+      "profissao": "",
+      "localizacao": "",
+      "biografia": "",
+      "interesses": [],
+      "fotoUrl": ""
+    },
+    {
+      "id": "88ed",
+      "nome": "Valentina de Oliveira Ramos",
+      "login": "valentina",
+      "senha": "Ma19112006@",
+      "email": "valentina@gmail.com",
+      "tipoUsuario": "usuario",
+      "profissao": "",
+      "localizacao": "",
+      "biografia": "",
+      "interesses": [],
+      "fotoUrl": ""
+    },
+    {
+      "id": "5478",
+      "nome": "gustavo ferreira",
+      "login": "gustavodev",
+      "senha": "123",
+      "email": "gustavoferreiralopes15@gmail.com",
+      "tipoUsuario": "usuario",
+      "profissao": "",
+      "localizacao": "",
+      "biografia": "",
+      "interesses": [],
+      "fotoUrl": ""
+    }
+  ],
   "posts": [
-    { "id": 1, "title": "json-server", "author": "typicode" }
+    {
+      "id": "1",
+      "user": {
+        "username": "@matheus_dev",
+        "avatarUrl": null,
+        "age": 24,
+        "location": "Betim (MG)",
+        "occupation": "Estudante ADS"
+      },
+      "content": "Fala pessoal!\n\nIrei deixar com vcs um PDF que encontrei para o estudo do modulo 2 de desenvolvimento de software.",
+      "link": null,
+      "attachment": {
+        "fileName": "#",
+        "displayText": "documento_desenvolvimento.pdf"
+      },
+      "tema": "Material de Estudo",
+      "comments": [
+        {
+          "user": "@eve_samirx",
+          "text": "Muito bom seu conteúdo, bacana!!!"
+        }
+      ],
+      "likes": 11,
+      "isLiked": true
+    },
+    {
+      "id": "2",
+      "user": {
+        "username": "@eve_samirx",
+        "avatarUrl": null,
+        "age": 20,
+        "location": "Betim (MG)",
+        "occupation": "Química"
+      },
+      "content": "Alguém tem indicação de cursos bons de Python para análise de dados? Estou querendo migrar de área.",
+      "link": null,
+      "attachment": null,
+      "tema": "Dúvida",
+      "comments": [
+        {
+          "user": "@C2K_king",
+          "text": "O curso do Guanabara é ótimo para começar!"
+        },
+        {
+          "user": "@user",
+          "text": "oi"
+        },
+        {
+          "user": "@valentina",
+          "text": "teste"
+        }
+      ],
+      "likes": 4,
+      "isLiked": true
+    },
+    {
+      "id": "e40c",
+      "user": {
+        "username": "@user",
+        "avatarUrl": null,
+        "age": "N/A",
+        "location": "Brasil",
+        "occupation": "Pedreiro"
+      },
+      "content": "Oi isso é um teste!",
+      "link": null,
+      "tema": "Teste",
+      "comments": [],
+      "likes": 1,
+      "isLiked": true
+    },
+    {
+      "id": "ee5e",
+      "user": {
+        "username": "@valentina",
+        "avatarUrl": null,
+        "age": "N/A",
+        "location": "Brasil",
+        "occupation": "Estudante"
+      },
+      "content": "Oie",
+      "link": null,
+      "tema": "Oi",
+      "comments": [],
+      "likes": 0,
+      "isLiked": false
+    },
+    {
+      "id": "88f2",
+      "user": {
+        "username": "@gustavodev",
+        "avatarUrl": null,
+        "age": "N/A",
+        "location": "Brasil",
+        "occupation": "Estudante"
+      },
+      "content": "ola aprendi sobre software hoje.",
+      "link": "http://127.0.0.1:5500/TechEdu/src/public/comunidade.html",
+      "tema": "aprendi software",
+      "comments": [
+        {
+          "user": "@gustavodev",
+          "text": "gostei bastante!!!"
+        }
+      ],
+      "likes": 1,
+      "isLiked": true
+    }
   ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
+  "contatos": [
+    {
+      "id": "c282",
+      "userid": "C2K_king",
+      "telefone": "",
+      "nome": "Caique de Lima e Silva",
+      "email": "caique@teste.com",
+      "assuntoctt": "Teste de envio",
+      "conteudoctt": "Testando o sistema de resposta.",
+      "linkctt": "",
+      "respondido": true,
+      "dataResposta": "2025-12-12T15:31:15.470Z",
+      "respostaAdmin": "Sim! O sistema está funcionando."
+    },
+    {
+      "id": "msg_02",
+      "userid": "visitante",
+      "telefone": "3199999999",
+      "nome": "Lucas Pereira",
+      "email": "lucas@email.com",
+      "assuntoctt": "Problema no Login",
+      "conteudoctt": "Não estou conseguindo recuperar minha senha. Podem ajudar?",
+      "linkctt": "",
+      "respondido": false
+    },
+    {
+      "id": "msg_03",
+      "userid": "eve_samirx",
+      "telefone": "",
+      "nome": "Samira Evelyn",
+      "email": "samira@teste.com",
+      "assuntoctt": "Sugestão de melhoria",
+      "conteudoctt": "Seria legal ter um modo noturno no site!",
+      "linkctt": "",
+      "respondido": false
+    },
+    {
+      "id": "4caa",
+      "userid": "user",
+      "telefone": "",
+      "nome": "Pedro Ramos",
+      "email": "pedrohenrique191106@gmail.com",
+      "assuntoctt": "Teste Oi",
+      "conteudoctt": "Oi isso é um teste!",
+      "linkctt": "",
+      "respondido": true,
+      "dataResposta": "2025-12-13T00:16:16.426Z",
+      "respostaAdmin": "Oi foi testado!"
+    },
+    {
+      "id": "ae9c",
+      "userid": "admin",
+      "telefone": "",
+      "nome": "Caique de Lima e Silva",
+      "email": "pedrohenrique19116@gmail.com",
+      "assuntoctt": "12321",
+      "conteudoctt": "Oi gustavo",
+      "linkctt": "",
+      "respondido": true,
+      "dataResposta": "2025-12-13T00:47:07.915Z",
+      "respostaAdmin": "Oi respondido"
+    },
+    {
+      "id": "261d",
+      "userid": "admin",
+      "telefone": "",
+      "nome": "Caique de Lima e Silva",
+      "email": "pedrohenrique19116@gmail.com",
+      "assuntoctt": "12",
+      "conteudoctt": "1313",
+      "linkctt": "",
+      "respondido": true,
+      "dataResposta": "2025-12-13T00:49:54.533Z",
+      "respostaAdmin": "oi"
+    },
+    {
+      "id": "8b7d",
+      "userid": "admin",
+      "telefone": "",
+      "nome": "Caique de Lima e Silva",
+      "email": "gustavoferreiralopes15@gmail.com",
+      "assuntoctt": "Oi teste!",
+      "conteudoctt": "Testado!",
+      "linkctt": "",
+      "respondido": true,
+      "dataResposta": "2025-12-13T00:51:11.972Z",
+      "respostaAdmin": "oii"
+    },
+    {
+      "id": "9782",
+      "userid": "admin",
+      "telefone": "",
+      "nome": "Caique de Lima e Silva",
+      "email": "caique@teste.com",
+      "assuntoctt": "dificuldade em criar um novo plano",
+      "conteudoctt": "olá , não consigo criar um novo plano",
+      "linkctt": ""
+    },
+    {
+      "id": "0202",
+      "userid": "gustavodev",
+      "telefone": "31971709865",
+      "nome": "gustavo ferreira",
+      "email": "gustavoferreiralopes15@gmail.com",
+      "assuntoctt": "dificuldade em criar um novo plano",
+      "conteudoctt": "nao estou criar um novo plano",
+      "linkctt": ""
+    },
+    {
+      "id": "a6b3",
+      "userid": "gustavodev",
+      "telefone": "31971709865",
+      "nome": "gustavo ferreira",
+      "email": "gustavoferreiralopes15@gmail.com",
+      "assuntoctt": "dificuldade em criar um novo plano",
+      "conteudoctt": "nso estou conseguindo criar um plano",
+      "linkctt": ""
+    }
   ],
-  "profile": { "name": "typicode" }
+  "planos": [
+    {
+      "id": "plano_exemplo_01",
+      "userId": "15a5",
+      "title": "Montagem do PC Gamer",
+      "description": "Quero aprender a escolher as peças e montar meu computador sozinho.",
+      "category": "hardware",
+      "level": "Iniciante",
+      "goal": "Montar meu primeiro PC",
+      "duration": 4,
+      "durationText": "4 Semanas (1 Mês - Recomendado)",
+      "lastUpdated": "2025-12-12T10:00:00.000Z",
+      "availability": [
+        {
+          "day": "Sábado",
+          "start": "14:00",
+          "end": "16:00"
+        },
+        {
+          "day": "Domingo",
+          "start": "10:00",
+          "end": "12:00"
+        }
+      ],
+      "topics": [
+        {
+          "value": "compatibilidade",
+          "text": "Compatibilidade de Peças",
+          "completedTasks": [
+            2,
+            0,
+            1
+          ]
+        },
+        {
+          "value": "cpu_intel_amd",
+          "text": "CPUs: Intel vs AMD",
+          "completedTasks": [
+            0,
+            2,
+            1
+          ]
+        },
+        {
+          "value": "gpu_nvidia_amd",
+          "text": "GPUs: NVIDIA vs AMD",
+          "completedTasks": [
+            0
+          ]
+        },
+        {
+          "value": "montagem",
+          "text": "Processo de Montagem (Build)",
+          "completedTasks": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a129",
+      "userId": "88ed",
+      "category": "desenvolvimento",
+      "title": "Teste",
+      "level": "Iniciante",
+      "description": "oiii",
+      "topics": [
+        {
+          "value": "logica_variaveis",
+          "text": "Logica Variaveis",
+          "completedTasks": [
+            0,
+            1,
+            2
+          ]
+        }
+      ],
+      "createdAt": "2025-12-13T01:03:00.943Z"
+    },
+    {
+      "id": "9be2",
+      "userId": "15a5",
+      "category": "hardware",
+      "title": "reqwr",
+      "level": "Iniciante",
+      "description": "ytj",
+      "topics": [
+        {
+          "value": "compatibilidade",
+          "text": "Compatibilidade",
+          "completedTasks": []
+        },
+        {
+          "value": "cpu_intel_amd",
+          "text": "Cpu Intel Amd",
+          "completedTasks": []
+        },
+        {
+          "value": "cpu_soquetes",
+          "text": "Cpu Soquetes",
+          "completedTasks": []
+        }
+      ],
+      "createdAt": "2025-12-14T19:57:58.736Z"
+    },
+    {
+      "id": "2d73",
+      "userId": "5478",
+      "category": "desenvolvimento",
+      "title": "aprendizado em c#",
+      "level": "Iniciante",
+      "description": "aprender c#",
+      "topics": [
+        {
+          "value": "logica_variaveis",
+          "text": "Logica Variaveis",
+          "completedTasks": [
+            0,
+            1
+          ]
+        },
+        {
+          "value": "logica_condicionais",
+          "text": "Logica Condicionais",
+          "completedTasks": []
+        },
+        {
+          "value": "logica_loops",
+          "text": "Logica Loops",
+          "completedTasks": []
+        },
+        {
+          "value": "logica_funcoes",
+          "text": "Logica Funcoes",
+          "completedTasks": []
+        },
+        {
+          "value": "logica_arrays",
+          "text": "Logica Arrays",
+          "completedTasks": []
+        },
+        {
+          "value": "logica_objetos",
+          "text": "Logica Objetos",
+          "completedTasks": []
+        }
+      ],
+      "createdAt": "2025-12-14T21:25:56.825Z"
+    },
+    {
+      "id": "322d",
+      "userId": "5478",
+      "category": "desenvolvimento",
+      "title": "aprender css",
+      "level": "Intermediário",
+      "description": "",
+      "topics": [
+        {
+          "value": "css_boxmodel",
+          "text": "Css Boxmodel",
+          "completedTasks": []
+        },
+        {
+          "value": "css_flexbox",
+          "text": "Css Flexbox",
+          "completedTasks": []
+        },
+        {
+          "value": "css_grid",
+          "text": "Css Grid",
+          "completedTasks": []
+        },
+        {
+          "value": "css_responsivo",
+          "text": "Css Responsivo",
+          "completedTasks": []
+        },
+        {
+          "value": "css_frameworks",
+          "text": "Css Frameworks",
+          "completedTasks": []
+        }
+      ],
+      "createdAt": "2025-12-14T21:26:17.168Z"
+    },
+    {
+      "id": "3d54",
+      "userId": "5478",
+      "category": "desenvolvimento",
+      "title": "aprender html",
+      "level": "Iniciante",
+      "description": "",
+      "topics": [
+        {
+          "value": "html_semantico",
+          "text": "Html Semantico",
+          "completedTasks": []
+        },
+        {
+          "value": "html_formularios",
+          "text": "Html Formularios",
+          "completedTasks": []
+        }
+      ],
+      "createdAt": "2025-12-14T21:26:35.736Z"
+    }
+  ]
 }
